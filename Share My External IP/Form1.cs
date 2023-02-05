@@ -119,7 +119,7 @@ namespace Share_My_External_IP
                 
         }
 
-        private void abrirForm(object sender, EventArgs e)
+        private void openForm(object sender, EventArgs e)
         {
             if (this.WindowState == FormWindowState.Minimized)
             {
@@ -136,7 +136,7 @@ namespace Share_My_External_IP
         private void Form1_Load(object sender, EventArgs e)
         {
             var contextMenu = new ContextMenuStrip();
-            contextMenu.Items.Add(new ToolStripMenuItem("Abrir", null, abrirForm));
+            contextMenu.Items.Add(new ToolStripMenuItem("Abrir", null, openForm));
             contextMenu.Items.Add(new ToolStripMenuItem("Copiar IP", null, linkLabel1_MouseClick));
             contextMenu.Items.Add(new ToolStripMenuItem("Fechar", null, btn_close_Click));
             notifyIcon.ContextMenuStrip = contextMenu;

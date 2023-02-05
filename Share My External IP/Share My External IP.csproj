@@ -8,6 +8,12 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <ApplicationIcon>IP Icon.ico</ApplicationIcon>
+    <RepositoryUrl>https://github.com/RichardLeite/Share-My-External-IP</RepositoryUrl>
+    <PackageIcon>IP Icon.png</PackageIcon>
+    <Copyright>Richard Leite</Copyright>
+    <Description>Aplicativo criado para ver e compartilhar seu IP Externo</Description>
+    <Authors>$(AssemblyName), Richard Leite, Richão,</Authors>
+    <Title>Share My External IP by Richão</Title>
   </PropertyGroup>
 
   <ItemGroup>
@@ -27,6 +33,13 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="IP Icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
